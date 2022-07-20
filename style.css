@@ -1,14 +1,74 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 body {
-    background-image: url(images/pattern-background-desktop.svg);
+    background: linear-gradient(hsl(225, 100%, 94%, 0.8), hsl(225, 100%, 94%, 0.8)) ,url(images/pattern-background-desktop.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+}
+
+.order-card {
+    width: 400px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.image-container-hero {
+    width: 100%;
+}
+
+.image-container-hero img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.order-summary-text {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.order-summary-text h1 {
+    font-size: 1.3rem;
+    color: hsl(223, 47%, 23%);
+    margin: 20px;
+}
+
+.order-summary-text p {
+    font-size: 1rem;
+    color: hsl(224, 23%, 55%);
+    margin: 20px;
+}
+
+.annual-plan-box {
+    background-color: hsl(225, 100%, 98%);
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.image-container-music-icon {
+    width: 40px;
+    display: inline-block;
+}
+
+.image-container-music-icon img {
+    width: 100%;
+}
+
+.annual-plan-box h2 {
+    display: inline-block;
+}
+
+button {
+    text-align: center;
+    width: 200px;
+    margin: auto;
 }
 
 .attribution {
