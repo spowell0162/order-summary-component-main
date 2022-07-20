@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,9 +11,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    position: relative;
 }
 
 .order-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 400px;
     border-radius: 20px;
     background-color: white;
@@ -28,6 +34,7 @@ body {
 }
 
 .order-summary-text {
+    padding-top: 20px;
     width: 300px;
     margin: auto;
     text-align: center;
@@ -47,30 +54,92 @@ body {
 
 .annual-plan-box {
     background-color: hsl(225, 100%, 98%);
-    width: 300px;
+    width: 320px;
     margin: auto;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 .image-container-music-icon {
     width: 40px;
     display: inline-block;
+    line-height: 0%;
 }
 
 .image-container-music-icon img {
     width: 100%;
 }
 
-.annual-plan-box h2 {
-    display: inline-block;
+.annual-plan-left-box {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.annual-plan-left-box h2 {
+    font-size: 0.9rem;
+}
+
+.annual-plan-left-box p {
+    font-size: 0.8rem;
+    color: hsl(224, 23%, 55%);
+}
+
+.text-change {
+    font-weight: 900;
+    color: hsl(245, 75%, 52%);
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+
+.button-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
 }
 
 button {
     text-align: center;
-    width: 200px;
-    margin: auto;
+    width: 320px;
+    margin: 10px 0;
+    border: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.button-1 {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0 10px 15px 10px hsl(245, 75%, 52%, 0.2);
+    z-index: 2;
+}
+
+.button-2 {
+    background-color: white;
+    margin-bottom: 30px;
+    color: hsl(224, 23%, 55%);
 }
 
 .attribution {
     display: none;
+}
+
+/* Phone */
+
+@media screen and (max-width: 480px) {
+    .order-card {
+        width: 200px;
+    }
 }
