@@ -141,5 +141,73 @@ button:hover {
 @media screen and (max-width: 480px) {
     .order-card {
         width: 200px;
+        border-radius: 20px;
     }
+
+    .image-container-hero img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .order-summary-text {
+        padding-top: 10px;
+        width: 150px;
+    }
+
+    .order-summary-text h1 {
+        font-size: 0.7rem;
+        margin: 10px;
+    }
+    
+    .order-summary-text p {
+        font-size: 0.5rem;
+        margin: 10px;
+    }
+
+    .annual-plan-box {
+        width: 160px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .image-container-music-icon {
+        width: 20px;
+    }
+
+    .annual-plan-left-box {
+        width: 70px;
+    }
+    
+    .annual-plan-left-box h2 {
+        font-size: 0.5rem;
+    }
+    
+    .annual-plan-left-box p {
+        font-size: 0.4rem;
+    }
+    
+    .text-change {
+        font-weight: 900;
+        font-size: 0.4rem;
+    }
+    
+    .button-box {
+        padding: 5px 0;
+    }
+    
+    button {
+        width: 160px;
+        margin: 5px 0;
+        padding: 8px 0;
+        border-radius: 5px;
+        font-size: 0.5rem;
+    }
+    
+    .button-1 {
+        box-shadow: 0 5px 8px 5px hsl(245, 75%, 52%, 0.2);
+    }
+    
+    .button-2 {
+        margin-bottom: 15px;
+    }
+
 }
