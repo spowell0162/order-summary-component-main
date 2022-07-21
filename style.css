@@ -98,7 +98,7 @@ body {
     color: hsl(245, 75%, 52%);
 }
 
-.text-change a:active {
+.text-change a:hover {
     text-decoration: none;
 }
 
@@ -132,7 +132,7 @@ button:hover {
     z-index: 2;
 }
 
-.button-1:active {
+.button-1:hover {
     background-color: hsl(245, 100%, 70%);
 }
 
@@ -142,7 +142,7 @@ button:hover {
     color: hsl(224, 23%, 55%);
 }
 
-.button-2:active {
+.button-2:hover {
     color: black;
 }
 
