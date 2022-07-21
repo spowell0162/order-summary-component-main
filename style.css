@@ -91,9 +91,15 @@ body {
 
 .text-change {
     font-weight: 900;
-    color: hsl(245, 75%, 52%);
     font-size: 0.8rem;
-    text-decoration: underline;
+}
+
+.text-change a {
+    color: hsl(245, 75%, 52%);
+}
+
+.text-change a:active {
+    text-decoration: none;
 }
 
 .button-box {
@@ -126,10 +132,18 @@ button:hover {
     z-index: 2;
 }
 
+.button-1:active {
+    background-color: hsl(245, 100%, 70%);
+}
+
 .button-2 {
     background-color: white;
     margin-bottom: 30px;
     color: hsl(224, 23%, 55%);
+}
+
+.button-2:active {
+    color: black;
 }
 
 .attribution {
